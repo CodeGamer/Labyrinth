@@ -1,6 +1,6 @@
-#include <qapplication.h>
-#include <qlabel.h>
-#include "Beta/worker.h"
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
+#include "../Beta/worker.h"
 
 int main(int argc, char* argv[])
 {
