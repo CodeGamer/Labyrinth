@@ -1,10 +1,12 @@
 #include <qapplication.h>
 #include <qlabel.h>
+#include "Beta/worker.h"
 
 int main(int argc, char* argv[])
 {
+	Worker *myWorker = new Worker();
 	QApplication myApp(argc, argv);
-	QLabel* myLabel = new QLabel("Hello Alpha");
+	QLabel* myLabel = new QLabel(myWorker->_text);
 	myLabel->resize(80, 30);
 	myLabel->show();
 	  
