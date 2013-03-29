@@ -6,9 +6,9 @@ CONFIG += qt
 SOURCES += main.cpp
 
 CONFIG(debug, debug|release) {
-	LIBS += -lBetaD
+	LIBS += -L../BetaD
 	TARGET = AlphaD
 } else {
-	LIBS += -lBeta
+	LIBS += -L../Beta
 	TARGET = Alpha
 }

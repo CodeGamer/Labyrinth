@@ -1,6 +1,6 @@
 #include <QString>
 
-class Worker
+class __declspec(dllexport) Worker
 {
 	public:
 		Worker();
