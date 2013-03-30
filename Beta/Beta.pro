@@ -1,9 +1,15 @@
 win32:TEMPLATE = vclib
 !win32:TEMPLATE = lib
 
-SOURCES += worker.cpp
+CONFIG += qt
+
+DESTDIR = ../Bin
+INCLUDEPATH += .
+DEPENDPATH +=.
 
 HEADERS += worker.h
+
+SOURCES += worker.cpp
 
 CONFIG(debug, debug|release) {
 	TARGET = BetaD

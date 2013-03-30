@@ -3,12 +3,18 @@ win32:TEMPLATE = vcapp
 
 CONFIG += qt
 
+DESTDIR = ../Bin
+INCLUDEPATH += .
+DEPENDPATH +=.
+
 SOURCES += main.cpp
 
 CONFIG(debug, debug|release) {
-	LIBS += -L../BetaD
+	LIBS += -LE:\ThirdParty\qt-everywhere-opensource-src-5.0.1\qtbase\lib -lQt5Gui
+	LIBS += -L../Bin -lBetaD
 	TARGET = AlphaD
 } else {
-	LIBS += -L../Beta
+	LIBS += -LE:\ThirdParty\qt-everywhere-opensource-src-5.0.1\qtbase\lib -lQt5Gui
+	LIBS += -L../Bin -lBeta
 	TARGET = Alpha
 }
