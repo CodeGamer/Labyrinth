@@ -4,17 +4,21 @@ win32:TEMPLATE = vcapp
 CONFIG += qt
 
 DESTDIR = ../Bin
-INCLUDEPATH += .
+INCLUDEPATH +=.
 DEPENDPATH +=.
 
 SOURCES += main.cpp
 
 CONFIG(debug, debug|release) {
-	LIBS += -LE:\ThirdParty\qt-everywhere-opensource-src-5.0.1\qtbase\lib -lQt5Gui
 	LIBS += -L../Bin -lBetaD
 	TARGET = AlphaD
 } else {
-	LIBS += -LE:\ThirdParty\qt-everywhere-opensource-src-5.0.1\qtbase\lib -lQt5Gui
 	LIBS += -L../Bin -lBeta
 	TARGET = Alpha
 }
+
+# Workaround for a QMake bug to fix up the project names
+win32:!Debug|Win32:!Release|Win32 {
+    CONFIG -= debug
+    CONFIG += release
+} 

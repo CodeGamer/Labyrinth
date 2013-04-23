@@ -1,5 +1,5 @@
-#include <QtWidgets/QApplication>
-#include <QtWidgets/QLabel>
+#include <QApplication>
+#include <QLabel>
 #include "../Beta/worker.h"
 
 int main(int argc, char* argv[])
