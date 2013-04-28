@@ -18,6 +18,9 @@ Mini::Mini(QMainWindow *parent)
 
 	ButtonLeft->setIcon(*_l1);
 	ButtonRight->setIcon(*_r1);
+
+	ButtonLeft->setShortcut(QKeySequence("a"));
+	ButtonRight->setShortcut(QKeySequence("l"));
 }
 
 Mini::~Mini()
@@ -47,6 +50,7 @@ void Mini::keyPressEvent(QKeyEvent *keyEvent)
 	switch(tolower(keyEvent->key()))
 	{
 		case 'a':
+			break;
 			if(_leftPressed)
 			{
 				on_ButtonLeft_released();
@@ -59,6 +63,7 @@ void Mini::keyPressEvent(QKeyEvent *keyEvent)
 			}
 			break;
 		case 'l':
+			break;
 			if(_rightPressed)
 			{
 				on_ButtonRight_released();
