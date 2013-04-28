@@ -4,4 +4,5 @@ win32:TEMPLATE = vcsubdirs
 # CONFIG += ordered
 
 SUBDIRS += Alpha \
-		Beta 
+		Beta \
+		Alexander

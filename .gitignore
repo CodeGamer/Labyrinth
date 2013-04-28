@@ -1,3 +1,7 @@
 /Bin
 /All.suo
 /All.sln
+/Alexander/ui_Mini.h
+*.pdb
+debug
+release

@@ -2,5 +2,5 @@
 
 Worker::Worker()
 {
-	_text = "Hallo Codegamer";
+	_text = "Hallo CodeGamer";
 }
