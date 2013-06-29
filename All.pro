@@ -5,4 +5,5 @@ win32:TEMPLATE = vcsubdirs
 
 SUBDIRS += Alpha \
 		Beta \
-		Alexander
+		Alexander \
+		Andreas_Test
