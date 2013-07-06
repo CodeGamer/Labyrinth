@@ -5,3 +5,6 @@
 *.pdb
 debug
 release
+/Andreas_Test/AndreasD.vcxproj
+/Andreas_Test/AndreasD.vcxproj.filters
+/Andreas_Test/AndreasD.vcxproj.user
