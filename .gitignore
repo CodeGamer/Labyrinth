@@ -10,3 +10,5 @@ release
 *.user
 *.filters
 /KnackDenCode/ui_CodeKnacker.h
+*.opensdf
+*.sdf

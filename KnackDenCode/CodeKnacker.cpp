@@ -7,6 +7,7 @@ CodeKnacker::CodeKnacker(QMainWindow *parent)
 
 	int digits = 3;
 	generatePassword(digits);
+
 }
 
 CodeKnacker::~CodeKnacker()
@@ -27,4 +28,9 @@ void CodeKnacker::on_lineEditPassword_textChanged(const QString &text)
 void CodeKnacker::showLamp(int status)
 {
 	//zeige ne Lampe abhängig vom Status
+}
+
+void CodeKnacker::on_buttonGroupNumbers_buttonClicked(QAbstractButton * button)
+{
+	labelDebug->text = "Button " + button + "clicked."
 }

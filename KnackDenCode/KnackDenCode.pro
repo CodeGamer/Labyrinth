@@ -15,9 +15,9 @@ HEADERS += CodeKnacker.h
 FORMS += CodeKnacker.ui
 
 CONFIG(debug, debug|release) {
-	TARGET = CodeKnackerD
+	TARGET = KnackDenCodeD
 } else {
-	TARGET = CodeKnacker
+	TARGET = KnackDenCode
 }
 
 # Workaround for a QMake bug to fix up the project names
