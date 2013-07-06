@@ -8,9 +8,11 @@ INCLUDEPATH +=.
 DEPENDPATH +=.
 
 SOURCES += main.cpp \
-		CodeKnacker.cpp
+		CodeKnacker.cpp \
+		Zufallsgenerator.cpp
 
-HEADERS += CodeKnacker.h
+HEADERS += CodeKnacker.h \
+		Zufallsgenerator.h
 
 FORMS += CodeKnacker.ui
 
