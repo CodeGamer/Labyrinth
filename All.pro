@@ -6,4 +6,5 @@ win32:TEMPLATE = vcsubdirs
 SUBDIRS += Alpha \
 		Beta \
 		Alexander \
-		Andreas_Test
+		Andreas_Test \
+		KnackDenCode
