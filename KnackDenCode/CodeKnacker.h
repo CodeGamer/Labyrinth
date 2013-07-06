@@ -13,4 +13,8 @@ class CodeKnacker : public QMainWindow, public Ui::UI_CodeKnacker
 		~CodeKnacker();
 
 	private:
+
+		void generatePassword(int digits);
+		void on_lineEditPassword_textChanged(const QString &text);
+		void showLamp(int status);
 };
