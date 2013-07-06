@@ -1,3 +1,5 @@
+#include <QDebug>
+
 #include "CodeKnacker.h"
 
 CodeKnacker::CodeKnacker(QMainWindow *parent)
@@ -32,5 +34,5 @@ void CodeKnacker::showLamp(int status)
 
 void CodeKnacker::on_buttonGroupNumbers_buttonClicked(QAbstractButton * button)
 {
-	labelDebug->text = "Button " + button + "clicked."
+	qDebug() << "Button " << button << " clicked";
 }

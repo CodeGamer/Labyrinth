@@ -12,7 +12,7 @@ class CodeKnacker : public QMainWindow, public Ui::UI_CodeKnacker
 		CodeKnacker(QMainWindow *parent = 0);
 		~CodeKnacker();
 
-		Q_SLOT on_buttonGroupNumbers_buttonClicked(QAbstractButton * button);
+		Q_SLOT void on_buttonGroupNumbers_buttonClicked(QAbstractButton * button);
 
 	private:
 
