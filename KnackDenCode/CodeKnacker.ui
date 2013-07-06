@@ -22,6 +22,11 @@
     <height>600</height>
    </size>
   </property>
+  <property name="font">
+   <font>
+    <family>Comic Sans MS</family>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>Knack den Code</string>
   </property>
@@ -337,16 +342,6 @@
      </font>
     </property>
    </widget>
-   <widget class="QTextEdit" name="numberOfTheCodeLength">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>531</y>
-      <width>121</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
@@ -360,6 +355,16 @@
      <string>Hier stellen Sie ein, wie viele Stellen der Code haben soll:</string>
     </property>
    </widget>
+   <widget class="QSpinBox" name="codeLength">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>530</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -367,7 +372,7 @@
      <x>0</x>
      <y>0</y>
      <width>600</width>
-     <height>21</height>
+     <height>23</height>
     </rect>
    </property>
   </widget>
