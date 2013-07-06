@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>UI_CodeKnacker</class>
+ <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>296</width>
-    <height>327</height>
+    <width>600</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>296</width>
-    <height>327</height>
+    <width>600</width>
+    <height>600</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>296</width>
-    <height>327</height>
+    <width>600</width>
+    <height>600</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -29,15 +29,16 @@
    <widget class="QPushButton" name="button1">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>110</y>
-      <width>31</width>
-      <height>31</height>
+      <x>150</x>
+      <y>190</y>
+      <width>51</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Comic Sans MS</family>
+      <pointsize>14</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -52,15 +53,16 @@
    <widget class="QPushButton" name="button2">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>110</y>
-      <width>31</width>
-      <height>31</height>
+      <x>220</x>
+      <y>190</y>
+      <width>51</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Comic Sans MS</family>
+      <pointsize>14</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -72,15 +74,16 @@
    <widget class="QPushButton" name="button3">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>110</y>
-      <width>31</width>
-      <height>31</height>
+      <x>290</x>
+      <y>190</y>
+      <width>51</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Comic Sans MS</family>
+      <pointsize>14</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -92,15 +95,16 @@
    <widget class="QPushButton" name="button6">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>150</y>
-      <width>31</width>
-      <height>31</height>
+      <x>290</x>
+      <y>260</y>
+      <width>51</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Comic Sans MS</family>
+      <pointsize>14</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -112,15 +116,16 @@
    <widget class="QPushButton" name="button4">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>150</y>
-      <width>31</width>
-      <height>31</height>
+      <x>150</x>
+      <y>260</y>
+      <width>51</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Comic Sans MS</family>
+      <pointsize>14</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -132,15 +137,16 @@
    <widget class="QPushButton" name="button5">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>150</y>
-      <width>31</width>
-      <height>31</height>
+      <x>220</x>
+      <y>260</y>
+      <width>51</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Comic Sans MS</family>
+      <pointsize>14</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -152,15 +158,16 @@
    <widget class="QPushButton" name="button9">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>190</y>
-      <width>31</width>
-      <height>31</height>
+      <x>290</x>
+      <y>330</y>
+      <width>51</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Comic Sans MS</family>
+      <pointsize>14</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -172,15 +179,16 @@
    <widget class="QPushButton" name="button7">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>190</y>
-      <width>31</width>
-      <height>31</height>
+      <x>150</x>
+      <y>330</y>
+      <width>51</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Comic Sans MS</family>
+      <pointsize>14</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -192,15 +200,16 @@
    <widget class="QPushButton" name="button8">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>190</y>
-      <width>31</width>
-      <height>31</height>
+      <x>220</x>
+      <y>330</y>
+      <width>51</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Comic Sans MS</family>
+      <pointsize>14</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -212,15 +221,16 @@
    <widget class="QPushButton" name="button0">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>230</y>
-      <width>31</width>
-      <height>31</height>
+      <x>220</x>
+      <y>400</y>
+      <width>51</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Comic Sans MS</family>
+      <pointsize>14</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -232,15 +242,16 @@
    <widget class="QPushButton" name="buttonReset">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>110</y>
-      <width>71</width>
-      <height>31</height>
+      <x>400</x>
+      <y>270</y>
+      <width>141</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Comic Sans MS</family>
+      <pointsize>13</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -252,15 +263,16 @@
    <widget class="QPushButton" name="deleteButton">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>150</y>
-      <width>71</width>
-      <height>31</height>
+      <x>400</x>
+      <y>190</y>
+      <width>141</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Comic Sans MS</family>
+      <pointsize>13</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -272,8 +284,8 @@
    <widget class="QGraphicsView" name="graphicsVieLamp">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>60</y>
+      <x>350</x>
+      <y>110</y>
       <width>30</width>
       <height>30</height>
      </rect>
@@ -282,10 +294,10 @@
    <widget class="QLineEdit" name="lineEditPassword">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>70</y>
-      <width>113</width>
-      <height>20</height>
+      <x>150</x>
+      <y>100</y>
+      <width>191</width>
+      <height>51</height>
      </rect>
     </property>
    </widget>
@@ -295,7 +307,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>296</width>
+     <width>600</width>
      <height>21</height>
     </rect>
    </property>
