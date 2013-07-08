@@ -1,4 +1,5 @@
 #include <QDebug>
+#include "qmath.h"
 
 #include "CodeKnacker.h"
 
@@ -8,10 +9,8 @@ CodeKnacker::CodeKnacker(QMainWindow *parent)
 	setupUi(this);
 
 	_zufallsGenerator = new Zufallsgenerator();
-	qDebug() << QString::number(_zufallsGenerator->generateRandomNumber());
 
-	int digits = 3;
-	generatePassword(digits);
+	on_codeLength_valueChanged(codeLength->value());
 	
 	button0->setShortcut(QKeySequence("0"));
 	button1->setShortcut(QKeySequence("1"));
@@ -23,8 +22,8 @@ CodeKnacker::CodeKnacker(QMainWindow *parent)
 	button7->setShortcut(QKeySequence("7"));
 	button8->setShortcut(QKeySequence("8"));
 	button9->setShortcut(QKeySequence("9"));
-//	newStartButton->setShortcut(QKeySequence(/8 )); //war ein Test, keine Ahnung, ob das funzt
-
+	//newStartButton->setShortcut(QKeySequence(...)); Qt::Key enum: http://qt-project.org/doc/qt-4.8/qt.html#Key-enum
+	resetButton->setShortcut(QKeySequence(Qt::Key_Backspace));
 }
 
 CodeKnacker::~CodeKnacker()
@@ -32,24 +31,69 @@ CodeKnacker::~CodeKnacker()
 
 }
 
-void CodeKnacker::generatePassword(int digits)
+void CodeKnacker::on_buttonGroupNumbers_buttonClicked(QAbstractButton *button)
 {
-	//generate Password to find
-	//qsrand(QTime::currentTime().msec());
-	QString test = qrand();
-	labelDebug->setText(test);
+	//qDebug() << "Button" << button << "clicked";
+	lineEditPassword->setText(lineEditPassword->text() + button->text());
 }
 
 void CodeKnacker::on_lineEditPassword_textChanged(const QString &text)
 {
-	//mach was, wenn was eingegeben wird.
+	//qDebug() << "Text changed:" << text;
+	if(text.length() == _digits)
+	{
+		checkInput(text);
+	}
+}
+
+void CodeKnacker::on_codeLength_valueChanged(int codeLength)
+{
+	_digits = codeLength;
+	lineEditPassword->setMaxLength(codeLength);
+	newStartButton->click();
+}
+
+void CodeKnacker::on_newStartButton_clicked()
+{
+	_password = generatePassword(_digits);
+	resetButton->click();
+	// reset lamp
+}
+
+void CodeKnacker::on_resetButton_clicked()
+{
+	labelDebug->setText("Password: " + _password);
+	lineEditPassword->setText("");
+}
+
+QString CodeKnacker::generatePassword(int digits)
+{
+	int rand = static_cast< int >(_zufallsGenerator->generateRandomNumber() * pow(10.0,digits));
+	QString pw = QString::number(rand);
+	while(pw.length() != digits)
+	{
+		pw = "0" + pw;
+	}
+	return pw;
+}
+
+void CodeKnacker::checkInput(QString input)
+{
+	if(input == _password)
+	{
+		labelDebug->setText("Code richtig!");
+		// showLamp(0); // grüne Lampe
+	}
+	else
+	{
+		labelDebug->setText("Code falsch!");
+		// check for correct numbers on false place // gelbe Lampe
+		// otherwise // rote Lampe
+	}
 }
 
 void CodeKnacker::showLamp(int status)
 {
-}
-
-void CodeKnacker::on_buttonGroupNumbers_buttonClicked(QAbstractButton * button)
-{
-	qDebug() << "Button " << button << " clicked";
+	qDebug() << "showLamp(" << status << ")";
+	//TODO
 }

@@ -1,5 +1,4 @@
 #include <QTime>
-#include <QDebug>
 
 #include "Zufallsgenerator.h"
 
@@ -32,6 +31,6 @@ double Zufallsgenerator::generateRandomNumber()
 	{
 		_currentSeed = _test + _m;
 	}
-	double ret = static_cast<double>(_currentSeed) / _m;
+	double ret = static_cast< double >(_currentSeed) / _m;
 	return ret;
 }
