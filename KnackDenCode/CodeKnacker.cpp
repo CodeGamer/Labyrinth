@@ -1,6 +1,3 @@
-#include <QDebug>
-#include "qmath.h"
-
 #include "CodeKnacker.h"
 
 CodeKnacker::CodeKnacker(QMainWindow *parent)
@@ -94,6 +91,5 @@ void CodeKnacker::checkInput(QString input)
 
 void CodeKnacker::showLamp(int status)
 {
-	qDebug() << "showLamp(" << status << ")";
 	//TODO
 }
