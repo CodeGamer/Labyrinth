@@ -622,24 +622,7 @@
   </widget>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>buttonExit</sender>
-   <signal>clicked()</signal>
-   <receiver>buttonNewGame</receiver>
-   <slot>click()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>460</x>
-     <y>313</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>460</x>
-     <y>276</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
  <buttongroups>
   <buttongroup name="gameField"/>
  </buttongroups>
