@@ -2,13 +2,14 @@
 /All.suo
 /All.sln
 /Alexander/ui_Mini.h
+/KnackDenCode/ui_CodeKnacker.h
+/Pascal/ui_TicTacToe.h
 *.pdb
 debug
 release
-*vcxproj
+*.vcxproj
 /ipch
 *.user
 *.filters
-/KnackDenCode/ui_CodeKnacker.h
 *.opensdf
 *.sdf

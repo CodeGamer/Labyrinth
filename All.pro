@@ -7,4 +7,5 @@ SUBDIRS += Alpha \
 		Beta \
 		Alexander \
 		Andreas_Test \
+		Pascal \
 		KnackDenCode
