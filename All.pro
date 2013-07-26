@@ -8,4 +8,5 @@ SUBDIRS += Alpha \
 		Alexander \
 		Andreas_Test \
 		Pascal \
-		KnackDenCode
+		KnackDenCode \
+		GW2
