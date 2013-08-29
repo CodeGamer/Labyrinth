@@ -1,9 +1,10 @@
 #pragma once
 
 #include <QMainWindow>
-#include "ui_TicTacToe.h"
+#include "ui_Test.h"
+#include <GameCore.h>
 
-class Test : public QMainWindow, public Ui::Test
+class Test : public QMainWindow, public Ui::Test, public CGameCore
 {
 	Q_OBJECT
 	
@@ -11,5 +12,11 @@ class Test : public QMainWindow, public Ui::Test
 		Test(QMainWindow *parent = 0);
 		~Test();
 
+		HWND getHandle();
+
+		void init(CRessourceManager* ressources);
+		void clear(void);
+		void update(CInputManager* input, DWORD passedTime);
+		void render(CGraphicManager* graphic);
 	private:
 };
