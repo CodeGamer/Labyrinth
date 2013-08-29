@@ -9,4 +9,5 @@ SUBDIRS += Alpha \
 		Andreas_Test \
 		Pascal \
 		KnackDenCode \
-		GW2
+		GW2 \
+		3D
