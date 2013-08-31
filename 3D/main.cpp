@@ -1,5 +1,5 @@
 #include <QApplication>
-#include "TicTacToe.h"
+#include "Test.h"
 
 int main(int argc, char* argv[])
 {

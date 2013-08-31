@@ -5,6 +5,8 @@ CONFIG += qt
 
 DESTDIR = ../Bin
 INCLUDEPATH +=.
+INCLUDEPATH += ../EdenEngine/Include
+INCLUDEPATH += "C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include"
 DEPENDPATH +=.
 
 SOURCES += main.cpp \
@@ -14,9 +16,13 @@ HEADERS += Test.h
 
 FORMS += Test.ui
 
+LIBS += "-LC:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Lib/x86"
+
 CONFIG(debug, debug|release) {
+	LIBS += -L../EdenEngine/Lib/Debug -lEdenEngineLibrary
 	TARGET = 3DD
 } else {
+	LIBS += -L../EdenEngine/Lib/Release -lEdenEngineLibrary
 	TARGET = 3D
 }
 
