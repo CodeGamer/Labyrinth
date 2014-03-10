@@ -7,10 +7,12 @@ QT += core gui widgets
 
 CONFIG += qt
 
-HEADERS += Src/Manager.h
+HEADERS += Src/Manager.h \
+		Src/Mannschaft.h
 
 SOURCES += Src/main.cpp \
-		Src/Manager.cpp
+		Src/Manager.cpp \
+		Src/Mannschaft.cpp
 
 FORMS += Forms/Manager.ui
 
