@@ -1,10 +1,10 @@
 #include "Mannschaft.h"
 
 Mannschaft::Mannschaft(QString name, QString herkunft, bool hatSchiri)
+: _name(name)
+, _herkunft(herkunft)
 {
-	_name = name;
-	_herkunft = herkunft;
-	_hatSchiri = hatSchiri;
+	setSchiri(hatSchiri);
 	_anzahlGeschiedsterSpiele = 0;
 }
 

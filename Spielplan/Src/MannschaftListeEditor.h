@@ -1,7 +1,9 @@
 #pragma once
 
+/* Qt */
 #include <QDialog>
 
+/* local */
 #include "ui_MannschaftListeEditor.h"
 
 class MannschaftListeEditor : public QDialog, public Ui::UI_MannschaftListeEditor

@@ -14,9 +14,9 @@ public:
 
 	Q_SIGNAL void hatSchiriChanged(bool b);
 
-private:
 	QString _name;
 	QString _herkunft;
-	bool _hatSchiri;
 	int _anzahlGeschiedsterSpiele;
+	bool _hatSchiri;
+
 };

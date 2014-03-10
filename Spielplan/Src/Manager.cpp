@@ -1,3 +1,7 @@
+/* Spielplan */
+#include "MannschaftListeEditor.h"
+
+/* local */
 #include "Manager.h"
 
 Manager::Manager(QMainWindow *parent)
@@ -10,11 +14,13 @@ Manager::Manager(QMainWindow *parent)
 	connect(actionLoadMannschaftsliste, SIGNAL(triggered()), this, SLOT(loadMannschaftsliste()));
 	connect(actionSaveMannschaftsliste, SIGNAL(triggered()), this, SLOT(saveMannschaftsliste()));
 	connect(actionEditMannschaftsliste, SIGNAL(triggered()), this, SLOT(editMannschaftsliste()));
+
+	//_listeMannschaften = new QList<Mannschaft>;
 }
 
 Manager::~Manager()
 {
-
+	//delete _listeMannschaften;
 }
 
 void Manager::loadSpielplan()
@@ -44,5 +50,11 @@ void Manager::saveMannschaftsliste()
 
 void Manager::editMannschaftsliste()
 {
+	MannschaftListeEditor *dialogMannschaftsListeEditor = new MannschaftListeEditor();
+	dialogMannschaftsListeEditor->exec();
+}
 
+void Manager::listeMannschaftenChanged(QList<Mannschaft> *liste)
+{
+	_listeMannschaften = liste;
 }
