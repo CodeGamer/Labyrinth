@@ -13,3 +13,6 @@ release
 *.filters
 *.opensdf
 *.sdf
+/Spielplan/ui_Manager.h
+/Spielplan/ui_MannschaftEditor.h
+/Spielplan/ui_MannschaftListeEditor.h
