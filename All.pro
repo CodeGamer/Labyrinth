@@ -3,11 +3,4 @@ win32:TEMPLATE = vcsubdirs
 
 # CONFIG += ordered
 
-SUBDIRS += Alpha \
-		Beta \
-		Alexander \
-		Andreas_Test \
-		Pascal \
-		KnackDenCode \
-		GW2 \
-		3D
+SUBDIRS += Spielplan
