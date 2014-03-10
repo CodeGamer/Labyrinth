@@ -51,6 +51,8 @@ void Manager::saveMannschaftsliste()
 void Manager::editMannschaftsliste()
 {
 	MannschaftListeEditor *dialogMannschaftsListeEditor = new MannschaftListeEditor();
+	connect(dialogMannschaftsListeEditor, SIGNAL(listeChanged()), this, SLOT(listeMannschaftenChanged()));
+	dialogMannschaftsListeEditor->setMannschaftListe(_listeMannschaften);
 	dialogMannschaftsListeEditor->exec();
 }
 
