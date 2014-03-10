@@ -5,10 +5,11 @@
 
 class Mannschaft : public QObject
 {
+	Q_OBJECT
+
 public:
 
-	Q_OBJECT;
-
+	Mannschaft();
 	Mannschaft(QString name, QString herkunft, bool hatSchiri);
 	~Mannschaft();
 

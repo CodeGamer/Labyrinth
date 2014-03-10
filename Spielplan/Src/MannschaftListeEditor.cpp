@@ -28,7 +28,7 @@ void MannschaftListeEditor::mannschaftListeChanged(QList<Mannschaft*> *liste)
 
 	mannschaftListeTable->setHorizontalHeaderLabels(QString("Mannschaft;Herkunft").split(";"));
 
-	mannschaftListeTable->setItem(0, 0, new QTableWidgetItem("Hannover 1"));
+	mannschaftListeTable->setItem(0, 0, new QTableWidgetItem(liste->at(0)->_name));
 	mannschaftListeTable->setItem(0, 1, new QTableWidgetItem("Hannover"));
 	mannschaftListeTable->setItem(1, 0, new QTableWidgetItem("Hannover 2"));
 	mannschaftListeTable->setItem(1, 1, new QTableWidgetItem("Hannover"));

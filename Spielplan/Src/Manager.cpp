@@ -15,7 +15,7 @@ Manager::Manager(QMainWindow *parent)
 	connect(actionSaveMannschaftsliste, SIGNAL(triggered()), this, SLOT(saveMannschaftsliste()));
 	connect(actionEditMannschaftsliste, SIGNAL(triggered()), this, SLOT(editMannschaftsliste()));
 
-	//_listeMannschaften = new QList<Mannschaft>;
+	_listeMannschaften = new QList<Mannschaft*>;
 }
 
 Manager::~Manager()
@@ -50,7 +50,8 @@ void Manager::saveMannschaftsliste()
 
 void Manager::editMannschaftsliste()
 {
-//	_listeMannschaften->append(new Mannschaft("wir", "clz", false));
+	Mannschaft *man1 = new Mannschaft("wir", "clz", false);
+	_listeMannschaften->append(man1);
 	MannschaftListeEditor *dialogMannschaftsListeEditor = new MannschaftListeEditor();
 	connect(dialogMannschaftsListeEditor, SIGNAL(listeChanged()), this, SLOT(listeMannschaftenChanged()));
 	dialogMannschaftsListeEditor->setMannschaftListe(_listeMannschaften);
