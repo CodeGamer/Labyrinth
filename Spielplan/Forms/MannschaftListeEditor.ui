@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>UI_MannschaftListe</class>
- <widget class="QDialog" name="UI_MannschaftListe">
+ <class>UI_MannschaftListeEditor</class>
+ <widget class="QDialog" name="UI_MannschaftListeEditor">
   <property name="geometry">
    <rect>
     <x>0</x>
