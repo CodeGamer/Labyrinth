@@ -7,10 +7,10 @@ CONFIG += qt
 
 QT += core gui widgets
 
-#HEADERS += src/Try.h
+HEADERS += src/Mannschaft.h
 
-#SOURCES += src/Test.cpp \
-#		src/Try.cpp
+SOURCES += src/Mannschaft.cpp #\
+#			src/Try.cpp
 
 #RESOURCES = Spielplan.qrc
 
