@@ -1,3 +1,6 @@
+#pragma once
+
+/* Qt */
 #include <QObject>
 
 class Mannschaft : public QObject

@@ -50,7 +50,10 @@ void Manager::saveMannschaftsliste()
 
 void Manager::editMannschaftsliste()
 {
+	_listeMannschaften->append(Mannschaft("wir", "clz", false));
 	MannschaftListeEditor *dialogMannschaftsListeEditor = new MannschaftListeEditor();
+	connect(dialogMannschaftsListeEditor, SIGNAL(listeChanged()), this, SLOT(listeMannschaftenChanged()));
+	dialogMannschaftsListeEditor->setMannschaftListe(_listeMannschaften);
 	dialogMannschaftsListeEditor->exec();
 }
 
