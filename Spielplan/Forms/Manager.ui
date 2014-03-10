@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>797</width>
     <height>600</height>
    </rect>
   </property>
@@ -14,17 +14,67 @@
    <string>Spielplan Manager</string>
   </property>
   <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar">
+  <widget class="QMenuBar" name="ManagerMenuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>797</width>
      <height>18</height>
     </rect>
    </property>
+   <widget class="QMenu" name="MenuFile">
+    <property name="title">
+     <string>Spielplan</string>
+    </property>
+    <addaction name="actionLoad"/>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuMannschaften">
+    <property name="title">
+     <string>Mannschaften</string>
+    </property>
+    <addaction name="actionMannschaftsliste_laden"/>
+    <addaction name="actionMannschaftsliste_speichern"/>
+    <addaction name="separator"/>
+    <addaction name="actionMannschaftsliste_editieren"/>
+   </widget>
+   <addaction name="MenuFile"/>
+   <addaction name="menuMannschaften"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Spielplan laden</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Spielplan speichern</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Programm beenden</string>
+   </property>
+  </action>
+  <action name="actionMannschaftsliste_laden">
+   <property name="text">
+    <string>Mannschaftsliste laden</string>
+   </property>
+  </action>
+  <action name="actionMannschaftsliste_speichern">
+   <property name="text">
+    <string>Mannschaftsliste speichern</string>
+   </property>
+  </action>
+  <action name="actionMannschaftsliste_editieren">
+   <property name="text">
+    <string>Mannschaftsliste editieren</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
