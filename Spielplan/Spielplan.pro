@@ -7,10 +7,12 @@ CONFIG += qt
 
 QT += core gui widgets
 
-#HEADERS += src/Try.h
+HEADERS += src/Manager.h
 
-#SOURCES += src/Test.cpp \
-#		src/Try.cpp
+SOURCES += src/main.cpp \
+		src/Manager.cpp
+
+#Forms += src/Manager.ui
 
 #RESOURCES = Spielplan.qrc
 
