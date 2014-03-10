@@ -3,16 +3,16 @@ win32:TEMPLATE = vcapp
 
 DESTDIR = ../Bin
 
-CONFIG += qt
-
 QT += core gui widgets
 
-HEADERS += src/Manager.h
+CONFIG += qt
 
-SOURCES += src/main.cpp \
-		src/Manager.cpp
+HEADERS += Src/Manager.h
 
-#Forms += src/Manager.ui
+SOURCES += Src/main.cpp \
+		Src/Manager.cpp
+
+FORMS += Forms/Manager.ui
 
 #RESOURCES = Spielplan.qrc
 
