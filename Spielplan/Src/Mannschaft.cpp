@@ -1,3 +1,4 @@
+/* local */
 #include "Mannschaft.h"
 
 Mannschaft::Mannschaft(QString name, QString herkunft, bool hatSchiri)

@@ -26,7 +26,5 @@ class Manager : public QMainWindow, public Ui::UI_Manager
 
 		Q_SLOT void listeMannschaftenChanged(QList<Mannschaft*> *liste);
 
-	private:
-
 		QList<Mannschaft*> *_listeMannschaften;
 };

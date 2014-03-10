@@ -22,4 +22,6 @@ public:
 	int _anzahlGeschiedsterSpiele;
 	bool _hatSchiri;
 
+private:
+
 };
