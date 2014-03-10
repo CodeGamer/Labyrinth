@@ -27,8 +27,8 @@
     <property name="title">
      <string>Spielplan</string>
     </property>
-    <addaction name="actionLoad"/>
-    <addaction name="actionSave"/>
+    <addaction name="actionLoadSpielplan"/>
+    <addaction name="actionSaveSpielplan"/>
     <addaction name="separator"/>
     <addaction name="actionExit"/>
    </widget>
@@ -36,21 +36,21 @@
     <property name="title">
      <string>Mannschaften</string>
     </property>
-    <addaction name="actionMannschaftsliste_laden"/>
-    <addaction name="actionMannschaftsliste_speichern"/>
+    <addaction name="actionLoadMannschaftsliste"/>
+    <addaction name="actionSaveMannschaftsliste"/>
     <addaction name="separator"/>
-    <addaction name="actionMannschaftsliste_editieren"/>
+    <addaction name="actionEditMannschaftsliste"/>
    </widget>
    <addaction name="MenuFile"/>
    <addaction name="menuMannschaften"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionLoad">
+  <action name="actionLoadSpielplan">
    <property name="text">
     <string>Spielplan laden</string>
    </property>
   </action>
-  <action name="actionSave">
+  <action name="actionSaveSpielplan">
    <property name="text">
     <string>Spielplan speichern</string>
    </property>
@@ -60,17 +60,17 @@
     <string>Programm beenden</string>
    </property>
   </action>
-  <action name="actionMannschaftsliste_laden">
+  <action name="actionLoadMannschaftsliste">
    <property name="text">
     <string>Mannschaftsliste laden</string>
    </property>
   </action>
-  <action name="actionMannschaftsliste_speichern">
+  <action name="actionSaveMannschaftsliste">
    <property name="text">
     <string>Mannschaftsliste speichern</string>
    </property>
   </action>
-  <action name="actionMannschaftsliste_editieren">
+  <action name="actionEditMannschaftsliste">
    <property name="text">
     <string>Mannschaftsliste editieren</string>
    </property>
