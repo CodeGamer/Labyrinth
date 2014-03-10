@@ -56,7 +56,7 @@ void Manager::editMannschaftsliste()
 	dialogMannschaftsListeEditor->exec();
 }
 
-void Manager::listeMannschaftenChanged(QList<Mannschaft> *liste)
+void Manager::listeMannschaftenChanged(QList<Mannschaft*> *liste)
 {
 	_listeMannschaften = liste;
 }

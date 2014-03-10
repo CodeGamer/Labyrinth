@@ -24,9 +24,9 @@ class Manager : public QMainWindow, public Ui::UI_Manager
 		Q_SLOT void saveMannschaftsliste();
 		Q_SLOT void editMannschaftsliste();
 
-		Q_SLOT void listeMannschaftenChanged(QList<Mannschaft> *liste);
+		Q_SLOT void listeMannschaftenChanged(QList<Mannschaft*> *liste);
 
 	private:
 
-		QList<Mannschaft> *_listeMannschaften;
+		QList<Mannschaft*> *_listeMannschaften;
 };

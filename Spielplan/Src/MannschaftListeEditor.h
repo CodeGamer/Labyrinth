@@ -17,11 +17,11 @@ class MannschaftListeEditor : public QDialog, public Ui::UI_MannschaftListeEdito
 		MannschaftListeEditor(QDialog *parent = 0);
 		~MannschaftListeEditor();
 
-	Q_SIGNAL void listeChanged(QList<Mannschaft> *liste);
-	Q_SLOT void mannschaftListeChanged(QList<Mannschaft> *liste);
+	Q_SIGNAL void listeChanged(QList<Mannschaft*> *liste);
+	Q_SLOT void mannschaftListeChanged(QList<Mannschaft*> *liste);
 
-	void setMannschaftListe(QList<Mannschaft> *liste);
+	void setMannschaftListe(QList<Mannschaft*> *liste);
 
 	private:
-		QList<Mannschaft> *_mannschaftListe;
+		QList<Mannschaft*> *_mannschaftListe;
 };
