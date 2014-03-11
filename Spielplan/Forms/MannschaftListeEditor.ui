@@ -6,9 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>600</width>
+    <height>600</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>600</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Mannschaftsliste</string>
@@ -18,8 +30,8 @@
     <rect>
      <x>10</x>
      <y>8</y>
-     <width>381</width>
-     <height>281</height>
+     <width>581</width>
+     <height>581</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -38,7 +50,7 @@
          <string>Neu</string>
         </property>
         <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
+         <string notr="true">actionButtonGroup</string>
         </attribute>
        </widget>
       </item>
@@ -48,9 +60,35 @@
          <string>Ändern</string>
         </property>
         <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
+         <string notr="true">actionButtonGroup</string>
         </attribute>
        </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="deleteButton">
+        <property name="text">
+         <string>Löschen</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">actionButtonGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>184</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
       </item>
       <item>
        <widget class="QPushButton" name="exitButton">
@@ -58,7 +96,7 @@
          <string>Schließen</string>
         </property>
         <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
+         <string notr="true">actionButtonGroup</string>
         </attribute>
        </widget>
       </item>
@@ -70,6 +108,6 @@
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup"/>
+  <buttongroup name="actionButtonGroup"/>
  </buttongroups>
 </ui>
