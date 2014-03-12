@@ -2,6 +2,10 @@
 
 /* Qt */
 #include <QMainWindow>
+#include <QFileDialog>
+#include <QStandardPaths>
+#include <QXmlStreamReader>
+#include <QXmlStreamWriter>
 
 /* Spielplan */
 #include "Mannschaft.h"
@@ -27,4 +31,10 @@ class Manager : public QMainWindow, public Ui::UI_Manager
 		Q_SLOT void listeMannschaftenChanged(QList<Mannschaft*> *liste);
 
 		QList<Mannschaft*> *_listeMannschaften;
+
+	private:
+		QString _fileformat;
+		bool loadFile(int i, QString filename);
+		bool saveFile(int i, QString filename);
+		Mannschaft* parseMannschaft(QXmlStreamReader &xml);
 };
