@@ -9,7 +9,16 @@ MannschaftListeEditor::MannschaftListeEditor(QDialog *parent)
 {
 	setupUi(this);
 	connect(this, SIGNAL(listeChanged(QList<Mannschaft*>*)), this, SLOT(mannschaftListeChanged(QList<Mannschaft*>*)));
-	
+
+	mannschaftListeTable->setSelectionBehavior(QAbstractItemView::SelectRows);
+
+	QHeaderView* headerView = new QHeaderView(Qt::Horizontal);
+//	headerView->setSectionResizeMode(QHeaderView::Stretch);
+//	mannschaftListeTable->setHorizontalHeader(headerView);
+	headerView = new QHeaderView(Qt::Vertical);
+	headerView->setSectionResizeMode(QHeaderView::ResizeToContents);
+	mannschaftListeTable->setVerticalHeader(headerView);
+
 	_checkSymbol = new QChar(10003);
 }
 
@@ -51,14 +60,6 @@ void MannschaftListeEditor::mannschaftListeChanged(QList<Mannschaft*> *liste)
 		row++;
 	}
 
-	mannschaftListeTable->setSelectionBehavior(QAbstractItemView::SelectRows);
-	
-	QHeaderView* headerView = new QHeaderView(Qt::Horizontal);
-	headerView->setSectionResizeMode(QHeaderView::Stretch);
-	mannschaftListeTable->setHorizontalHeader(headerView);
-	headerView = new QHeaderView(Qt::Vertical);
-	headerView->setSectionResizeMode(QHeaderView::ResizeToContents);
-	mannschaftListeTable->setVerticalHeader(headerView);
 	mannschaftListeTable->resizeColumnsToContents();
 }
 
@@ -83,7 +84,7 @@ void MannschaftListeEditor::on_deleteButton_clicked()
 {
 	int currRow = mannschaftListeTable->currentRow();
 	Mannschaft *tmp = _mannschaftListe->takeAt(currRow);
-	tmp->~Mannschaft();
+	delete tmp;
 	mannschaftListeTable->removeRow(currRow);
 }
 
@@ -94,8 +95,8 @@ void MannschaftListeEditor::on_exitButton_clicked()
 
 void MannschaftListeEditor::on_mannschaftListeTable_cellDoubleClicked(int row, int column)
 {
-	row++;
-	column++;
+	Q_UNUSED(row);
+	Q_UNUSED(column);
 	on_editButton_clicked();
 }
 

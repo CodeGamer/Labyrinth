@@ -19,12 +19,6 @@ Manager::Manager(QMainWindow *parent)
 	_fileformat = tr("XML-Datei (*.xml)");
 
 	_listeMannschaften = new QList<Mannschaft*>;
-	
-	/* DEBUG */
-	Mannschaft *man1 = new Mannschaft("wir", "clz", false);
-	Mannschaft *man2 = new Mannschaft("foo", "bar", true);
-	_listeMannschaften->append(man1);
-	_listeMannschaften->append(man2);
 }
 
 Manager::~Manager()
