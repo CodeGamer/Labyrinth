@@ -24,6 +24,7 @@ class MannschaftListeEditor : public QDialog, public Ui::UI_MannschaftListeEdito
 		Q_SLOT void on_deleteButton_clicked();
 		Q_SLOT void on_exitButton_clicked();
 		Q_SLOT void on_mannschaftListeTable_cellDoubleClicked(int row, int column);
+		Q_SLOT void on_mannschaftListeTable_cellClicked(int row, int column);
 		Q_SLOT void addMannschaft(int row, Mannschaft *mannschaft);
 		Q_SLOT void editMannschaft(int row, Mannschaft *mannschaft);
 

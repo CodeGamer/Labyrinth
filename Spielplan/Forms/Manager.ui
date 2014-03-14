@@ -6,21 +6,52 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>797</width>
-    <height>600</height>
+    <width>1024</width>
+    <height>768</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>768</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Spielplan Manager</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Images/turnierplan.png);</string>
+      </property>
+      <property name="background">
+       <brush brushstyle="NoBrush">
+        <color alpha="255">
+         <red>160</red>
+         <green>160</green>
+         <blue>160</blue>
+        </color>
+       </brush>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
   <widget class="QMenuBar" name="ManagerMenuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>797</width>
-     <height>18</height>
+     <width>1024</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="MenuFile">
@@ -76,6 +107,8 @@
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="../Spielplan.qrc"/>
+ </resources>
  <connections/>
 </ui>

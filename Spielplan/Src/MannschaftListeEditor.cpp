@@ -86,6 +86,8 @@ void MannschaftListeEditor::on_deleteButton_clicked()
 	Mannschaft *tmp = _mannschaftListe->takeAt(currRow);
 	delete tmp;
 	mannschaftListeTable->removeRow(currRow);
+	editButton->setEnabled(false);
+	deleteButton->setEnabled(false);
 }
 
 void MannschaftListeEditor::on_exitButton_clicked()
@@ -98,6 +100,14 @@ void MannschaftListeEditor::on_mannschaftListeTable_cellDoubleClicked(int row, i
 	Q_UNUSED(row);
 	Q_UNUSED(column);
 	on_editButton_clicked();
+}
+
+void MannschaftListeEditor::on_mannschaftListeTable_cellClicked(int row, int column)
+{
+	Q_UNUSED(row);
+	Q_UNUSED(column);
+	editButton->setEnabled(true);
+	deleteButton->setEnabled(true);
 }
 
 void MannschaftListeEditor::addMannschaft(int row, Mannschaft *mannschaft)

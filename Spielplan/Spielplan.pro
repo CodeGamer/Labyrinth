@@ -22,7 +22,7 @@ FORMS += Forms/Manager.ui \
 		Forms/MannschaftEditor.ui \
 		Forms/MannschaftListeEditor.ui
 
-#RESOURCES = Spielplan.qrc
+RESOURCES = Spielplan.qrc
 
 CONFIG(debug, debug|release) {
 	TARGET = SpielplanD

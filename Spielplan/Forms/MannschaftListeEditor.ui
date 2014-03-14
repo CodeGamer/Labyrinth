@@ -16,94 +16,88 @@
     <height>600</height>
    </size>
   </property>
-  <property name="maximumSize">
-   <size>
-    <width>600</width>
-    <height>600</height>
-   </size>
-  </property>
   <property name="windowTitle">
    <string>Mannschaftsliste</string>
   </property>
-  <widget class="QWidget" name="verticalLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>8</y>
-     <width>581</width>
-     <height>581</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <widget class="QTableWidget" name="mannschaftListeTable">
-      <property name="editTriggers">
-       <set>QAbstractItemView::NoEditTriggers</set>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
-       <widget class="QPushButton" name="addButton">
-        <property name="text">
-         <string>Neu</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">actionButtonGroup</string>
-        </attribute>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="editButton">
-        <property name="text">
-         <string>Ändern</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">actionButtonGroup</string>
-        </attribute>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="deleteButton">
-        <property name="text">
-         <string>Löschen</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">actionButtonGroup</string>
-        </attribute>
-       </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeType">
-         <enum>QSizePolicy::Fixed</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>184</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QPushButton" name="exitButton">
-        <property name="text">
-         <string>Schließen</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">actionButtonGroup</string>
-        </attribute>
-       </widget>
-      </item>
-     </layout>
-    </item>
-   </layout>
-  </widget>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTableWidget" name="mannschaftListeTable">
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="addButton">
+         <property name="text">
+          <string>Neu</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">actionButtonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="editButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Ändern</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">actionButtonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="deleteButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Löschen</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">actionButtonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>184</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="exitButton">
+         <property name="text">
+          <string>Schließen</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">actionButtonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>
