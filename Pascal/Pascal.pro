@@ -3,6 +3,8 @@ win32:TEMPLATE = vcapp
 
 CONFIG += qt
 
+QT += core gui widgets
+
 DESTDIR = ../Bin
 INCLUDEPATH +=.
 DEPENDPATH +=.
